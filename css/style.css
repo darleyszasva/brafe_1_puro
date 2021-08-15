@@ -1,3 +1,13 @@
+/* Breakpoints 
+
+960
+740
+
+
+*/
+
+
+
 /* Reset */
 
  body, h1, h2, h3, p, ul {
@@ -55,6 +65,25 @@ a.menu-logo {
     font-size: 1.125em; /*Tamanho desejado-18/Tamanho Padrão Browser-16 = 1.125em */
 }
 
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .menu {
+        text-align: center;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+
+} 
+
+
+
+
 .intro {
     background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
@@ -81,6 +110,13 @@ a.menu-logo {
     font-style: italic;
     font-size: 1.125;
 }
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .intro {
+        padding: 60px 0;
+    }
+
+} 
 
 
 /* Sobre */
@@ -140,6 +176,29 @@ a.menu-logo {
     margin: 20px auto;
     max-width: 460px;
 }
+
+@media (min-width: 739px) and (max-width: 980px) { /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .sobre-container {
+        max-width: 720px;
+    }
+
+    .sobre-item {
+        width: 340px;
+    }
+} 
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .sobre-container {
+        max-width: 300px;
+    }
+    
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
+
 
 /* Produtos */
 
@@ -215,6 +274,28 @@ h2.produtos-mineiro::before {
     margin: 20px auto 0 auto;
 }
 
+@media (min-width: 739px) and (max-width: 980px) { /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .produtos-container {
+        max-width: 720px;
+    }
+
+    .produtos-item {
+        width: 220px;
+    }
+} 
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .produtos-container {
+        max-width: 300px;
+    }
+    
+    .produtos-item {
+        width: 300px;
+        margin: 0 auto 20px auto;
+    }
+
+}
+
 
 /* Locais */
 
@@ -268,6 +349,32 @@ h2.produtos-mineiro::before {
     color: #252525;
     padding: 10px 20px;
 }
+
+@media (min-width: 739px) and (max-width: 980px) { /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .locais {
+        max-width: 720pxpx;
+    }
+
+    .locais-item > div, .locais-item img {
+        width: 340px;
+    }
+
+
+} 
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .locais {
+        max-width: 300px;
+    }
+
+    
+    .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
+ 
+}
+
 
 /* Assine */
 
@@ -337,6 +444,31 @@ font-style: italic;
     cursor: pointer;
 }
 
+@media (min-width: 739px) and (max-width: 980px) { /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .assine-container {
+        max-width: 720px;
+
+    }
+    
+    .assine-info, .assine form, .assine input {
+        width: 340px;
+    }
+
+}
+
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .assine-container {
+        max-width: 300px;
+    }
+
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+}
+
+
 /* Footer */
 
 .footer {
@@ -368,3 +500,20 @@ font-style: italic;
     display: block;
 }
 
+
+@media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0;
+    }
+
+    .footer img {
+        float: none;
+        margin: 10px 0;
+    }
+
+}
