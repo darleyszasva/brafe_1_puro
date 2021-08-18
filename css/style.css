@@ -28,11 +28,16 @@
 .menu {
     background: #252525;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
 }
 
 .menu-container{
     max-width: 960px;
     margin: 0 auto;
+    
 }
 
 /* Hack CSS ClearFix */
@@ -113,7 +118,7 @@ a.menu-logo {
 
 @media (max-width: 739px){ /* Tudo que for abaixo de 739px irá aplicar os estilos abaixo */ /*@media only screen and (max-width: 739px) - caso queira que os seguintes estilos sejam aplcados apenas para telas e não para impressões */
     .intro {
-        padding: 60px 0;
+        padding: 200px 0px 60px 0px;
     }
 
 } 
